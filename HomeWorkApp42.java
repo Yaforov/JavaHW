@@ -22,9 +22,9 @@ class HomeWorkApp42 {
         random = new Random();
         scanner = new Scanner(System.in);
         do {
-            System.out.println("Enter the length of the field [1 ..]: ");
+            System.out.println("Enter the length of the field [2 ..]: ");
             l = scanner.nextInt();
-        } while (l < 1);
+        } while (l < 2);
         table = new char[l][l];
         do {
             System.out.println("Enter the number of hours for WIN: ");
