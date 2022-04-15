@@ -22,8 +22,11 @@ public class Cat {
     }
 
     void eat(Plate p) {
-        fullness = p.decreaseFood(appetite);
+        if (!fullness) { // - Проверка сытости кота
         foods = p.food;
+        //System.out.println(foods); - проверка сколько еды в тарелке перед кормлением следующего кота.
+        fullness = p.decreaseFood(appetite);
+        }
     }
 
     @Override
