@@ -24,6 +24,6 @@ public class Plate {
 
     @Override
     public String toString() {
-        return "В тарелке: " + food;
+        return "В тарелке еды: " + food;
     }
 }
